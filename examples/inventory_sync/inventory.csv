@@ -1,0 +1,10 @@
+SKU,Name,Price,Stock,Description,CategoryID,ImageURL,Featured
+SHIRT-001,Camiseta Básica Blanca,19.99,50,Camiseta de algodón 100% en color blanco,15,https://ejemplo.com/camiseta-blanca.jpg,false
+SHIRT-002,Camiseta Premium Negra,29.99,30,Camiseta premium de algodón orgánico en color negro,15,https://ejemplo.com/camiseta-negra.jpg,true
+PANTS-001,Pantalón Jeans Clásico,49.99,25,Pantalón jeans de corte clásico en denim azul,16,https://ejemplo.com/jeans-clasico.jpg,false
+SHOES-001,Zapatillas Deportivas,79.99,15,Zapatillas deportivas para running y entrenamiento,17,https://ejemplo.com/zapatillas-deportivas.jpg,true
+HAT-001,Gorra Baseball,14.99,40,Gorra estilo baseball ajustable en varios colores,18,https://ejemplo.com/gorra-baseball.jpg,false
+JACKET-001,Chaqueta Impermeable,89.99,20,Chaqueta impermeable para actividades al aire libre,19,https://ejemplo.com/chaqueta-impermeable.jpg,true
+SOCKS-001,Calcetines Deportivos Pack 3,12.99,100,Pack de 3 pares de calcetines deportivos,15,https://ejemplo.com/calcetines-deportivos.jpg,false
+WATCH-001,Reloj Digital Deportivo,45.99,35,Reloj digital resistente al agua para deportes,20,https://ejemplo.com/reloj-digital.jpg,false
+
