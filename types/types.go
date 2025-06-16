@@ -120,47 +120,47 @@ type ProductAttribute struct {
 
 // Order represents a Dokan order
 type Order struct {
-	ID               int         `json:"id,omitempty"`
-	ParentID         int         `json:"parent_id,omitempty"`
-	Number           string      `json:"number,omitempty"`
-	OrderKey         string      `json:"order_key,omitempty"`
-	CreatedVia       string      `json:"created_via,omitempty"`
-	Version          string      `json:"version,omitempty"`
-	Status           OrderStatus `json:"status"`
-	Currency         string      `json:"currency"`
-	DateCreated      *time.Time  `json:"date_created,omitempty"`
-	DateCreatedGMT   *time.Time  `json:"date_created_gmt,omitempty"`
-	DateModified     *time.Time  `json:"date_modified,omitempty"`
-	DateModifiedGMT  *time.Time  `json:"date_modified_gmt,omitempty"`
-	DiscountTotal    string      `json:"discount_total,omitempty"`
-	DiscountTax      string      `json:"discount_tax,omitempty"`
-	ShippingTotal    string      `json:"shipping_total,omitempty"`
-	ShippingTax      string      `json:"shipping_tax,omitempty"`
-	CartTax          string      `json:"cart_tax,omitempty"`
-	Total            string      `json:"total,omitempty"`
-	TotalTax         string      `json:"total_tax,omitempty"`
-	PricesIncludeTax bool        `json:"prices_include_tax,omitempty"`
-	CustomerID       int         `json:"customer_id,omitempty"`
-	CustomerIPAddress string     `json:"customer_ip_address,omitempty"`
-	CustomerUserAgent string     `json:"customer_user_agent,omitempty"`
-	CustomerNote     string      `json:"customer_note,omitempty"`
-	Billing          *Address    `json:"billing,omitempty"`
-	Shipping         *Address    `json:"shipping,omitempty"`
-	PaymentMethod    string      `json:"payment_method,omitempty"`
-	PaymentMethodTitle string    `json:"payment_method_title,omitempty"`
-	TransactionID    string      `json:"transaction_id,omitempty"`
-	DatePaid         *time.Time  `json:"date_paid,omitempty"`
-	DatePaidGMT      *time.Time  `json:"date_paid_gmt,omitempty"`
-	DateCompleted    *time.Time  `json:"date_completed,omitempty"`
-	DateCompletedGMT *time.Time  `json:"date_completed_gmt,omitempty"`
-	CartHash         string      `json:"cart_hash,omitempty"`
-	LineItems        []LineItem  `json:"line_items,omitempty"`
-	TaxLines         []TaxLine   `json:"tax_lines,omitempty"`
-	ShippingLines    []ShippingLine `json:"shipping_lines,omitempty"`
-	FeeLines         []FeeLine   `json:"fee_lines,omitempty"`
-	CouponLines      []CouponLine `json:"coupon_lines,omitempty"`
-	Refunds          []Refund    `json:"refunds,omitempty"`
-	MetaData         []MetaData  `json:"meta_data,omitempty"`
+	ID                 int            `json:"id,omitempty"`
+	ParentID           int            `json:"parent_id,omitempty"`
+	Number             string         `json:"number,omitempty"`
+	OrderKey           string         `json:"order_key,omitempty"`
+	CreatedVia         string         `json:"created_via,omitempty"`
+	Version            string         `json:"version,omitempty"`
+	Status             OrderStatus    `json:"status"`
+	Currency           string         `json:"currency"`
+	DateCreated        *time.Time     `json:"date_created,omitempty"`
+	DateCreatedGMT     *time.Time     `json:"date_created_gmt,omitempty"`
+	DateModified       *time.Time     `json:"date_modified,omitempty"`
+	DateModifiedGMT    *time.Time     `json:"date_modified_gmt,omitempty"`
+	DiscountTotal      string         `json:"discount_total,omitempty"`
+	DiscountTax        string         `json:"discount_tax,omitempty"`
+	ShippingTotal      string         `json:"shipping_total,omitempty"`
+	ShippingTax        string         `json:"shipping_tax,omitempty"`
+	CartTax            string         `json:"cart_tax,omitempty"`
+	Total              string         `json:"total,omitempty"`
+	TotalTax           string         `json:"total_tax,omitempty"`
+	PricesIncludeTax   bool           `json:"prices_include_tax,omitempty"`
+	CustomerID         int            `json:"customer_id,omitempty"`
+	CustomerIPAddress  string         `json:"customer_ip_address,omitempty"`
+	CustomerUserAgent  string         `json:"customer_user_agent,omitempty"`
+	CustomerNote       string         `json:"customer_note,omitempty"`
+	Billing            *Address       `json:"billing,omitempty"`
+	Shipping           *Address       `json:"shipping,omitempty"`
+	PaymentMethod      string         `json:"payment_method,omitempty"`
+	PaymentMethodTitle string         `json:"payment_method_title,omitempty"`
+	TransactionID      string         `json:"transaction_id,omitempty"`
+	DatePaid           *time.Time     `json:"date_paid,omitempty"`
+	DatePaidGMT        *time.Time     `json:"date_paid_gmt,omitempty"`
+	DateCompleted      *time.Time     `json:"date_completed,omitempty"`
+	DateCompletedGMT   *time.Time     `json:"date_completed_gmt,omitempty"`
+	CartHash           string         `json:"cart_hash,omitempty"`
+	LineItems          []LineItem     `json:"line_items,omitempty"`
+	TaxLines           []TaxLine      `json:"tax_lines,omitempty"`
+	ShippingLines      []ShippingLine `json:"shipping_lines,omitempty"`
+	FeeLines           []FeeLine      `json:"fee_lines,omitempty"`
+	CouponLines        []CouponLine   `json:"coupon_lines,omitempty"`
+	Refunds            []Refund       `json:"refunds,omitempty"`
+	MetaData           []MetaData     `json:"meta_data,omitempty"`
 }
 
 // Address represents a billing or shipping address
@@ -221,14 +221,14 @@ type ShippingLine struct {
 
 // FeeLine represents a fee line
 type FeeLine struct {
-	ID       int        `json:"id,omitempty"`
-	Name     string     `json:"name"`
-	TaxClass string     `json:"tax_class,omitempty"`
-	TaxStatus string    `json:"tax_status"`
-	Total    string     `json:"total"`
-	TotalTax string     `json:"total_tax"`
-	Taxes    []TaxLine  `json:"taxes,omitempty"`
-	MetaData []MetaData `json:"meta_data,omitempty"`
+	ID        int        `json:"id,omitempty"`
+	Name      string     `json:"name"`
+	TaxClass  string     `json:"tax_class,omitempty"`
+	TaxStatus string     `json:"tax_status"`
+	Total     string     `json:"total"`
+	TotalTax  string     `json:"total_tax"`
+	Taxes     []TaxLine  `json:"taxes,omitempty"`
+	MetaData  []MetaData `json:"meta_data,omitempty"`
 }
 
 // CouponLine represents a coupon line
@@ -249,40 +249,33 @@ type Refund struct {
 
 // Store represents a Dokan store
 type Store struct {
-	ID          int      `json:"id"`
-	StoreName   string   `json:"store_name"`
-	FirstName   string   `json:"first_name"`
-	LastName    string   `json:"last_name"`
-	Email       string   `json:"email"`
-	Phone       string   `json:"phone,omitempty"`
-	ShowEmail   bool     `json:"show_email,omitempty"`
-	Address     *Address `json:"address,omitempty"`
-	Location    string   `json:"location,omitempty"`
-	Banner      string   `json:"banner,omitempty"`
-	Icon        string   `json:"icon,omitempty"`
-	Gravatar    string   `json:"gravatar,omitempty"`
-	ShopURL     string   `json:"shop_url,omitempty"`
-	ProductsURL string   `json:"products_url,omitempty"`
-	TocsURL     string   `json:"tocs_url,omitempty"`
-	Featured    bool     `json:"featured,omitempty"`
-	Rating      *Rating  `json:"rating,omitempty"`
-	Enabled     bool     `json:"enabled,omitempty"`
-	Registered  string   `json:"registered,omitempty"`
-	PaymentMethods []PaymentMethod `json:"payment,omitempty"`
-	Social      map[string]string `json:"social,omitempty"`
+	ID             int                          `json:"id"`
+	StoreName      string                       `json:"store_name"`
+	FirstName      string                       `json:"first_name"`
+	LastName       string                       `json:"last_name"`
+	Email          string                       `json:"email"`
+	Phone          string                       `json:"phone,omitempty"`
+	ShowEmail      bool                         `json:"show_email,omitempty"`
+	Address        *Address                     `json:"address,omitempty"`
+	Location       string                       `json:"location,omitempty"`
+	Banner         string                       `json:"banner,omitempty"`
+	Icon           string                       `json:"icon,omitempty"`
+	Gravatar       string                       `json:"gravatar,omitempty"`
+	ShopURL        string                       `json:"shop_url,omitempty"`
+	ProductsURL    string                       `json:"products_url,omitempty"`
+	TocsURL        string                       `json:"tocs_url,omitempty"`
+	Featured       bool                         `json:"featured,omitempty"`
+	Rating         *Rating                      `json:"rating,omitempty"`
+	Enabled        bool                         `json:"enabled,omitempty"`
+	Registered     string                       `json:"registered,omitempty"`
+	PaymentMethods map[string]map[string]string `json:"payment,omitempty"`
+	Social         map[string]string            `json:"social,omitempty"`
 }
 
 // Rating represents store rating information
 type Rating struct {
 	Rating string `json:"rating"`
 	Count  int    `json:"count"`
-}
-
-// PaymentMethod represents a payment method
-type PaymentMethod struct {
-	ID      string `json:"id"`
-	Title   string `json:"title"`
-	Details map[string]interface{} `json:"details,omitempty"`
 }
 
 // MetaData represents metadata
@@ -312,27 +305,27 @@ type ListResponse struct {
 // ProductListParams represents parameters for listing products
 type ProductListParams struct {
 	ListParams
-	Status     []ProductStatus `url:"status,omitempty"`
-	Type       []ProductType   `url:"type,omitempty"`
-	Featured   *bool          `url:"featured,omitempty"`
-	Category   []int          `url:"category,omitempty"`
-	Tag        []int          `url:"tag,omitempty"`
-	MinPrice   *float64       `url:"min_price,omitempty"`
-	MaxPrice   *float64       `url:"max_price,omitempty"`
-	StockStatus string        `url:"stock_status,omitempty"`
-	SKU        string         `url:"sku,omitempty"`
+	Status      []ProductStatus `url:"status,omitempty"`
+	Type        []ProductType   `url:"type,omitempty"`
+	Featured    *bool           `url:"featured,omitempty"`
+	Category    []int           `url:"category,omitempty"`
+	Tag         []int           `url:"tag,omitempty"`
+	MinPrice    *float64        `url:"min_price,omitempty"`
+	MaxPrice    *float64        `url:"max_price,omitempty"`
+	StockStatus string          `url:"stock_status,omitempty"`
+	SKU         string          `url:"sku,omitempty"`
 }
 
 // OrderListParams represents parameters for listing orders
 type OrderListParams struct {
 	ListParams
-	Status     []OrderStatus `url:"status,omitempty"`
-	Customer   int           `url:"customer,omitempty"`
-	Product    int           `url:"product,omitempty"`
-	After      *time.Time    `url:"after,omitempty"`
-	Before     *time.Time    `url:"before,omitempty"`
-	ModifiedAfter  *time.Time `url:"modified_after,omitempty"`
-	ModifiedBefore *time.Time `url:"modified_before,omitempty"`
+	Status         []OrderStatus `url:"status,omitempty"`
+	Customer       int           `url:"customer,omitempty"`
+	Product        int           `url:"product,omitempty"`
+	After          *time.Time    `url:"after,omitempty"`
+	Before         *time.Time    `url:"before,omitempty"`
+	ModifiedAfter  *time.Time    `url:"modified_after,omitempty"`
+	ModifiedBefore *time.Time    `url:"modified_before,omitempty"`
 }
 
 // StoreListParams represents parameters for listing stores
@@ -341,4 +334,3 @@ type StoreListParams struct {
 	Featured *bool `url:"featured,omitempty"`
 	Enabled  *bool `url:"enabled,omitempty"`
 }
-

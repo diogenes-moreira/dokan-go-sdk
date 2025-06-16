@@ -74,7 +74,6 @@ type (
 	Store           = types.Store
 	StoreListParams = types.StoreListParams
 	Rating          = types.Rating
-	PaymentMethod   = types.PaymentMethod
 
 	// Common types
 	MetaData     = types.MetaData
@@ -82,15 +81,15 @@ type (
 	ListResponse = types.ListResponse
 
 	// Auth types
-	AuthType        = auth.AuthType
-	Authenticator   = auth.Authenticator
-	BasicAuth       = auth.BasicAuth
-	JWTAuth         = auth.JWTAuth
-	AuthConfig      = auth.Config
+	AuthType      = auth.AuthType
+	Authenticator = auth.Authenticator
+	BasicAuth     = auth.BasicAuth
+	JWTAuth       = auth.JWTAuth
+	AuthConfig    = auth.Config
 
 	// Review types
 	ReviewListParams = stores.ReviewListParams
-	Review          = stores.Review
+	Review           = stores.Review
 
 	// Error types
 	DokanError          = errors.DokanError
@@ -142,9 +141,9 @@ var (
 	DefaultConfig    = client.DefaultConfig
 
 	// Auth functions
-	NewBasicAuth      = auth.NewBasicAuth
-	NewJWTAuth        = auth.NewJWTAuth
-	NewAuthenticator  = auth.NewAuthenticator
+	NewBasicAuth     = auth.NewBasicAuth
+	NewJWTAuth       = auth.NewJWTAuth
+	NewAuthenticator = auth.NewAuthenticator
 
 	// Error functions
 	NewDokanError          = errors.NewDokanError
@@ -156,4 +155,3 @@ var (
 	IsDokanError           = errors.IsDokanError
 	HandleHTTPError        = errors.HandleHTTPError
 )
-
